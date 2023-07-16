@@ -89,3 +89,14 @@ body {
     margin: 3px;
   }
 }
+
+/* second mobile phone */
+@media (max-width: 402px) {
+  html {
+    font-size: 55%;
+  }
+  .simply-countdown > .simply-section {
+    padding: 40px;
+    margin: 2px;
+  }
+}

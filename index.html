@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
     <script src="countdown/simplyCountdown.min.js"></script>
 
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -38,93 +44,108 @@
       </main>
     </section>
 
-    <section id="undangan" class="undangan w-100 h-100">
-      <main>
-        <nav class="navbar navbar-expand-lg navbar-light bg-opacity-10">
-          <div class="container">
-            <a class="navbar-brand" href="#undangan">NajRul Wedding</a>
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">NajRul</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NajRul</h5>
             <button
-              class="navbar-toggler"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#acara">ACARA</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#info">INFO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#story">STORY</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#gallery">GALLERY</a>
-                </li>
-              </ul>
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#undangan">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
             </div>
           </div>
-        </nav>
-        <div
-          class="wrapper d-flex flex-column align-items-center justify-content-center"
-        >
-          <h1>Majlis Perkahwinan</h1>
-          <h3>Dilaksanakan pada 31 Disember 2023 di Rumah Anda, Penang</h3>
-          <p>
-            Oleh itu, kami dengan segala hormatnya menjemput YB / Dato' / Datin
-            / Tuan / Puan / Encik / Cik untuk menghadirkan diri pada acara
-            perkahwinan kami
-          </p>
         </div>
+      </div>
+    </nav>
 
-        <div
-          class="wrapper-image d-flex flex-row gap-3 align-content-center justify-content-center"
-        >
-          <div class="person text-end d-flex gap-3">
-            <div>
-              <h3>Nurul Najwa</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Perspiciatis deleniti minima neque provident iure atque, fuga
-                quo libero voluptas laudantium.
-              </p>
-              <p>Anak siapa ya kamu?</p>
-            </div>
-            <div class="d-flex justify-content-center align-items-center">
-              <img
-                src="img/najwa.PNG"
-                alt="Nurul Najwa Picture"
-                class="img-people rounded-circle"
-              />
-            </div>
+    <section id="undangan" class="undangan w-100 h-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Perkahwinan</h2>
+            <h3>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum,
+              ea!
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
+              maxime nesciunt eum magni eligendi maiores? Odio fugit autem
+              asperiores labore!
+            </p>
           </div>
-          <div class="person d-flex gap-3">
-            <div class="d-flex justify-content-center align-items-center">
-              <img
-                src="img/amirul.PNG"
-                alt="Muhammad Amirul Picture"
-                class="img-people rounded-circle"
-              />
+
+          <div class="row couple">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-8 text-end">
+                  <h3>Amirul</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates error et cumque neque, enim adipisci!
+                  </p>
+                  <p>Anak siapa ya kamu?</p>
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/amirul.PNG"
+                    alt="Amirul"
+                    class="w-100 h-100 img-responsive rounded-circle"
+                  />
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>Muhammad Amirul</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Perspiciatis deleniti minima neque provident iure atque, fuga
-                quo libero voluptas laudantium.
-              </p>
-              <p>Anak siapa ya kamu?</p>
+
+            <span class="heart"><i class="bi bi-heart-fill"></i></span>
+
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-4">
+                  <img
+                    src="img/najwa.PNG"
+                    alt="Najwa"
+                    class="w-100 h-100 img-responsive rounded-circle"
+                  />
+                </div>
+                <div class="col-8">
+                  <h3>Najwa</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates error et cumque neque, enim adipisci!
+                  </p>
+                  <p>Anak siapa ya kamu?</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </section>
 
     <script
